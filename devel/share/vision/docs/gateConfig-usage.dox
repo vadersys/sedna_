@@ -1,0 +1,9 @@
+\subsubsection usage Usage
+\verbatim
+<node name="gate_task" pkg="vision" type="gate_task">
+  <param name="loOrange" type="int" value="0" />
+  <param name="hiOrange" type="int" value="29" />
+  <param name="minContourArea" type="int" value="194" />
+</node>
+\endverbatim
+

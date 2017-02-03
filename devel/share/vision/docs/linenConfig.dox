@@ -1,0 +1,11 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~val" : \b [double] Value for adaptive threshold min: 0.0, default: 143.0, max: 255.0
+- \b "~upperAreaThresh" : \b [int] Upperbound for threshold min: 0, default: 17647, max: 30000
+- \b "~areaThresh" : \b [int] Minimum area for bucket min: 0, default: 95, max: 3000
+- \b "~blur" : \b [bool] Apply blur to filter chain min: False, default: False, max: True
+- \b "~threshLow" : \b [int] Minimum area for bucket min: 0, default: 43, max: 255
+- \b "~threshHigh" : \b [int] Minimum area for bucket min: 0, default: 255, max: 255
+

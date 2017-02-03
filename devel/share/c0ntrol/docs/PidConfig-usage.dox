@@ -1,0 +1,9 @@
+\subsubsection usage Usage
+\verbatim
+<node name="c0ntrol" pkg="c0ntrol" type="c0ntrol">
+  <param name="kp" type="double" value="0.0" />
+  <param name="ki" type="double" value="0.0" />
+  <param name="kd" type="double" value="0.0" />
+</node>
+\endverbatim
+

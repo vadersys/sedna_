@@ -1,0 +1,158 @@
+#include <ros/ros.h>
+#include <image_transport/image_transport.h>
+#include <cv_bridge/cv_bridge.h>
+#include <sensor_msgs/image_encodings.h>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <visi0n/ThreshConfig.h>
+#include <dynamic_reconfigure/server.h>
+#include <iostream>
+#include <stdio.h>
+
+
+int HMIN,HMAX,SMIN,SMAX,VMIN,VMAX,erosion_val,dilation_val,thresh_val;
+double area,largest_area;
+int largest_contour_index;
+cv::RNG rng(12345);
+cv::Rect bounding_rect;
+image_transport::Subscriber image_sub_;
+image_transport::Publisher image_pub_;
+int threshold_value = 0;
+int threshold_type = 3;
+void dyn_cb(visi0n::ThreshConfig& config, uint32_t level)
+{
+	threshold_value= config.thresh_val;
+	threshold_type= config.type;
+	HMIN = config.h_min;
+	HMAX = config.h_max;
+	SMIN = config.s_min;
+	SMAX = config.s_max;
+	VMIN = config.v_min;
+	VMAX = config.v_max;
+	erosion_val = config.erosion;
+	dilation_val = config.dilation;
+	thresh_val = config.thresh;
+}
+
+
+void imageCb(const sensor_msgs::ImageConstPtr& msg)
+{
+
+    cv_bridge::CvImagePtr cv_grey_ptr;
+    cv_bridge::CvImagePtr cv_normal_ptr;
+    cv_bridge::CvImagePtr cv_added_ptr(new cv_bridge::CvImage());
+    cv::Mat HSVImage;
+    cv::Mat ThreshImage;
+    cv::Mat canny_output;
+    cv::vector<cv::vector<cv::Point> > contours;
+    cv::vector<cv::Vec4i> hierarchy;
+
+        try
+        {
+	cv_grey_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::MONO8);
+	cv_normal_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
+        }
+        catch (cv_bridge::Exception& e)
+        {
+            ROS_ERROR("cv_bridge exception: %s", e.what());
+            return;
+        }
+	cv::threshold(cv_grey_ptr->image, cv_grey_ptr->image, threshold_value,255,threshold_type );
+	cv::threshold(cv_grey_ptr->image , cv_grey_ptr->image , 100, 255, cv::THRESH_BINARY);
+	cv_normal_ptr->image.copyTo(cv_added_ptr->image,cv_grey_ptr->image);
+	cvtColor(cv_added_ptr->image, HSVImage, CV_BGR2HSV);
+	cv::inRange(HSVImage, cv::Scalar(HMIN,SMIN,VMIN), cv::Scalar(HMAX,SMAX,VMAX), ThreshImage);
+	cv_added_ptr->image.setTo(cv::Scalar(0,0,0), ThreshImage);
+	cvtColor(cv_added_ptr->image, cv_added_ptr->image, CV_HSV2BGR);
+	cvtColor(cv_added_ptr->image,cv_added_ptr->image,CV_BGR2GRAY);
+	GaussianBlur(cv_added_ptr->image, cv_added_ptr->image, cv::Size(9, 9), 2, 2 );
+	
+
+	cv::Mat erosion_element = getStructuringElement( cv::MORPH_RECT,
+                                       cv::Size( 2*erosion_val + 1, 2*erosion_val+1 ),
+                                       cv::Point( erosion_val, erosion_val ) );
+	cv::Mat dilation_element = getStructuringElement( cv::MORPH_RECT,
+                                       cv::Size( 2*dilation_val + 1, 2*dilation_val+1 ),
+                                       cv::Point( dilation_val, dilation_val ) );
+	erode( cv_added_ptr->image, cv_added_ptr->image, erosion_element );
+	dilate( cv_added_ptr->image,cv_added_ptr->image, dilation_element );
+	Canny( cv_added_ptr->image, canny_output, thresh_val, thresh_val*2, 3 );
+	findContours(canny_output, contours, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, cv::Point(0, 0) );
+	cv::vector<cv::Point2f>center( contours.size() );
+	for( int i = 0; i< contours.size(); i++ )
+     	{
+       		area=contourArea( contours[i],false);  
+       		if(area>largest_area)
+		{
+       			largest_area=area;
+       			largest_contour_index=i;
+       			bounding_rect=boundingRect(contours[i]);
+			circle( canny_output, center[i], 3, cv::Scalar(255,255,255), -1, 8, 0 );
+
+		}
+     	}
+	cv::Scalar color( 255,255,255);
+
+	/*cv::vector<cv::Vec4i> lines;
+  	HoughLinesP(canny_output, lines, 1, CV_PI/180, 50, 50, 10 );
+  	for( size_t i = 0; i < lines.size(); i++ )
+  	{
+    		cv::Vec4i l = lines[i];
+    		line( cv_added_ptr->image, cv::Point(l[0], l[1]), cv::Point(l[2], l[3]), cv::Scalar(255,255,255), 3, CV_AA);
+		cv::Point center(cvRound((l[0]+l[2])/2),cvRound((l[1]+l[3])/2));
+      		circle( cv_added_ptr->image, center, 3, cv::Scalar(0,0,0), -1, 8, 0 );
+		
+  	}
+	
+ 	//drawContours( cv_added_ptr->image, contours,largest_contour_index, color, CV_FILLED, 8, hierarchy );}
+
+
+	/*cv::vector<cv::Vec3f> circles;
+	ROS_INFO("STARTING TRANSFORM");
+  	HoughCircles( cv_added_ptr->image, circles, CV_HOUGH_GRADIENT, 2, 100, 100, 100, 0, 1000 );
+	ROS_INFO("ENDING TRANSFORM");
+  	ROS_INFO("CIRCLE : %d",circles.size());
+  	for( size_t i = 0; i < circles.size(); i++ )
+	{
+      		cv::Point center(cvRound(circles[i][0]), cvRound(circles[i][1]));
+      		int radius = cvRound(circles[i][2]);
+
+      		// circle center
+      		circle( cv_added_ptr->image, center, 3, cv::Scalar(255,255,255), -1, 8, 0 );
+      		// circle outline
+      		circle( cv_added_ptr->image, center, radius, cv::Scalar(0,0,0), 3, 8, 0 );
+  	}*/
+	
+	rectangle(canny_output, bounding_rect,  cv::Scalar(0,255,0),1, 8,0);  
+	cv_added_ptr->image = canny_output;
+	cvtColor(cv_added_ptr->image,cv_added_ptr->image,CV_GRAY2BGR);
+	cv_added_ptr->header = cv_normal_ptr->header;
+	cv_added_ptr->encoding = cv_normal_ptr->encoding;
+
+        image_pub_.publish(cv_added_ptr->toImageMsg());
+}
+    
+
+
+int main(int argc, char** argv)
+{
+	
+    ros::init(argc, argv, "image_converter");
+    ros::NodeHandle _nh;
+    image_transport::ImageTransport it_(_nh);
+    dynamic_reconfigure::Server<visi0n::ThreshConfig> server;
+    dynamic_reconfigure::Server<visi0n::ThreshConfig>::CallbackType f;
+    f = boost::bind(&dyn_cb, _1, _2);
+    server.setCallback(f);
+	image_sub_
+            = it_.subscribe("/sedna/camera/front/image_raw", 1,imageCb);
+        image_pub_ = it_.advertise("/image_converter/output_video", 1);
+    //ros::Rate r(2);
+    //while(ros::ok())
+	//{
+
+    ros::spin();
+	//r.sleep();
+	//}
+    return 0;
+}

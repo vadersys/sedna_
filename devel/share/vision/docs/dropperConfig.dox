@@ -1,0 +1,8 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~loV" : \b [int] Low V bound for Blue min: 0, default: 82, max: 255
+- \b "~hiV" : \b [int] High V bound for Blue min: 0, default: 0, max: 255
+- \b "~minContourArea" : \b [int] Minimum threshold area for buoy contours min: 0, default: 483, max: 1000
+

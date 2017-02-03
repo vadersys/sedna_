@@ -1,0 +1,13 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~speed1" : \b [int] S1 PWM Value min: 0, default: 400, max: 400
+- \b "~speed2" : \b [int] S2 PWM Value min: 0, default: 400, max: 400
+- \b "~speed3" : \b [int] S3 PWM Value min: 0, default: 400, max: 400
+- \b "~speed4" : \b [int] S4 PWM Value min: 0, default: 400, max: 400
+- \b "~speed5" : \b [int] S5 PWM Value min: 0, default: 400, max: 400
+- \b "~speed6" : \b [int] S6 PWM Value min: 0, default: 400, max: 400
+- \b "~speed7" : \b [int] S7 PWM Value min: 0, default: 400, max: 400
+- \b "~speed8" : \b [int] S8 PWM Value min: 0, default: 400, max: 400
+

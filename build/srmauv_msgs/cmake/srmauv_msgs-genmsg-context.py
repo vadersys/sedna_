@@ -1,0 +1,11 @@
+# generated from genmsg/cmake/pkg-genmsg.context.in
+
+messages_str = "/home/parth/sedna/src/srmauv_msgs/msg/compass_data.msg;/home/parth/sedna/src/srmauv_msgs/msg/ControlData.msg;/home/parth/sedna/src/srmauv_msgs/msg/controller.msg;/home/parth/sedna/src/srmauv_msgs/msg/depth.msg;/home/parth/sedna/src/srmauv_msgs/msg/imu_data.msg;/home/parth/sedna/src/srmauv_msgs/msg/pid_info.msg;/home/parth/sedna/src/srmauv_msgs/msg/thruster.msg;/home/parth/sedna/src/srmauv_msgs/msg/vision.msg;/home/parth/sedna/src/srmauv_msgs/msg/teleop_sedna.msg;/home/parth/sedna/src/srmauv_msgs/msg/thruster_alp.msg;/home/parth/sedna/src/srmauv_msgs/msg/goal.msg;/home/parth/sedna/src/srmauv_msgs/msg/line.msg;/home/parth/sedna/src/srmauv_msgs/msg/buoy.msg;/home/parth/sedna/src/srmauv_msgs/msg/bucket.msg;/home/parth/sedna/src/srmauv_msgs/msg/missions.msg;/home/parth/sedna/src/srmauv_msgs/msg/gate.msg;/home/parth/sedna/src/srmauv_msgs/msg/control_mode.msg;/home/parth/sedna/devel/share/srmauv_msgs/msg/ControllerAction.msg;/home/parth/sedna/devel/share/srmauv_msgs/msg/ControllerActionGoal.msg;/home/parth/sedna/devel/share/srmauv_msgs/msg/ControllerActionResult.msg;/home/parth/sedna/devel/share/srmauv_msgs/msg/ControllerActionFeedback.msg;/home/parth/sedna/devel/share/srmauv_msgs/msg/ControllerGoal.msg;/home/parth/sedna/devel/share/srmauv_msgs/msg/ControllerResult.msg;/home/parth/sedna/devel/share/srmauv_msgs/msg/ControllerFeedback.msg"
+services_str = "/home/parth/sedna/src/srmauv_msgs/srv/locomotion_mode.srv;/home/parth/sedna/src/srmauv_msgs/srv/set_controller.srv;/home/parth/sedna/src/srmauv_msgs/srv/c0ntrol.srv"
+pkg_name = "srmauv_msgs"
+dependencies_str = "std_msgs;actionlib_msgs;geometry_msgs"
+langs = "gencpp;genlisp;genpy"
+dep_include_paths_str = "srmauv_msgs;/home/parth/sedna/src/srmauv_msgs/msg;srmauv_msgs;/home/parth/sedna/devel/share/srmauv_msgs/msg;std_msgs;/opt/ros/indigo/share/std_msgs/cmake/../msg;actionlib_msgs;/opt/ros/indigo/share/actionlib_msgs/cmake/../msg;geometry_msgs;/opt/ros/indigo/share/geometry_msgs/cmake/../msg"
+PYTHON_EXECUTABLE = "/usr/bin/python"
+package_has_static_sources = '' == 'TRUE'
+genmsg_check_deps_script = "/opt/ros/indigo/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py"

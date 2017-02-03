@@ -1,0 +1,10 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~loOrange" : \b [int] Low L bound for Orange min: 0, default: 143, max: 255
+- \b "~areaThresh" : \b [int] Low V bound for area min: 0, default: 50, max: 2000
+- \b "~hiOrange" : \b [int] High L bound for Orange min: 0, default: 190, max: 255
+- \b "~upperAreaThresh" : \b [int] High V bound for area min: 0, default: 191, max: 25500
+- \b "~blur" : \b [bool] Apply blur to filter chain min: False, default: False, max: True
+

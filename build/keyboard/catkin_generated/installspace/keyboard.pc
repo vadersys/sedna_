@@ -1,0 +1,8 @@
+prefix=/home/parth/sedna/install
+
+Name: keyboard
+Description: Description of keyboard
+Version: 0.0.0
+Cflags: -I/home/parth/sedna/install/include
+Libs: -L/home/parth/sedna/install/lib 
+Requires: roscpp std_msgs message_runtime

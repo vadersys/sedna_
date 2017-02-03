@@ -1,0 +1,11 @@
+\subsubsection usage Usage
+\verbatim
+<node name="flare_task" pkg="vision" type="flare_task">
+  <param name="loRed" type="int" value="143" />
+  <param name="loGreen" type="int" value="18" />
+  <param name="hiRed" type="int" value="190" />
+  <param name="hiGreen" type="int" value="49" />
+  <param name="minContourArea" type="int" value="194" />
+</node>
+\endverbatim
+

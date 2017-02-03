@@ -1,0 +1,8 @@
+prefix=/home/parth/sedna/devel
+
+Name: rosserial_client
+Description: Description of rosserial_client
+Version: 0.7.4
+Cflags: 
+Libs: -L/home/parth/sedna/devel/lib 
+Requires: 

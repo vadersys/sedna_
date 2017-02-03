@@ -1,0 +1,8 @@
+prefix=/home/parth/sedna/devel
+
+Name: rosserial_mbed
+Description: Description of rosserial_mbed
+Version: 0.7.4
+Cflags: -I/home/parth/sedna/devel/include
+Libs: -L/home/parth/sedna/devel/lib 
+Requires: message_runtime

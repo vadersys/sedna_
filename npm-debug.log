@@ -1,0 +1,772 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'express',
+1 verbose cli   '--global',
+1 verbose cli   'gulp-cli' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 verbose cache add [ 'express', null ]
+5 verbose cache add name=undefined spec="express" args=["express",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'express',
+6 verbose parsed url   path: 'express',
+6 verbose parsed url   href: 'express' }
+7 verbose cache add [ 'gulp-cli', null ]
+8 verbose cache add name=undefined spec="gulp-cli" args=["gulp-cli",null]
+9 verbose parsed url { protocol: null,
+9 verbose parsed url   slashes: null,
+9 verbose parsed url   auth: null,
+9 verbose parsed url   host: null,
+9 verbose parsed url   port: null,
+9 verbose parsed url   hostname: null,
+9 verbose parsed url   hash: null,
+9 verbose parsed url   search: null,
+9 verbose parsed url   query: null,
+9 verbose parsed url   pathname: 'gulp-cli',
+9 verbose parsed url   path: 'gulp-cli',
+9 verbose parsed url   href: 'gulp-cli' }
+10 silly lockFile f3c62de4-express express
+11 verbose lock express /home/parth/.npm/f3c62de4-express.lock
+12 silly lockFile e23a8be8-gulp-cli gulp-cli
+13 verbose lock gulp-cli /home/parth/.npm/e23a8be8-gulp-cli.lock
+14 silly lockFile f3c62de4-express express
+15 silly lockFile f3c62de4-express express
+16 verbose addNamed [ 'express', '' ]
+17 verbose addNamed [ null, '*' ]
+18 silly lockFile 64a534c1-express express@
+19 verbose lock express@ /home/parth/.npm/64a534c1-express.lock
+20 silly lockFile e23a8be8-gulp-cli gulp-cli
+21 silly lockFile e23a8be8-gulp-cli gulp-cli
+22 silly addNameRange { name: 'express', range: '*', hasData: false }
+23 verbose addNamed [ 'gulp-cli', '' ]
+24 verbose addNamed [ null, '*' ]
+25 silly lockFile dd34a9c8-gulp-cli gulp-cli@
+26 verbose lock gulp-cli@ /home/parth/.npm/dd34a9c8-gulp-cli.lock
+27 verbose url raw express
+28 verbose url resolving [ 'http://registry.npmjs.org/', './express' ]
+29 verbose url resolved http://registry.npmjs.org/express
+30 info trying registry request attempt 1 at 17:44:51
+31 http GET http://registry.npmjs.org/express
+32 silly addNameRange { name: 'gulp-cli', range: '*', hasData: false }
+33 verbose url raw gulp-cli
+34 verbose url resolving [ 'http://registry.npmjs.org/', './gulp-cli' ]
+35 verbose url resolved http://registry.npmjs.org/gulp-cli
+36 info trying registry request attempt 1 at 17:44:51
+37 http GET http://registry.npmjs.org/gulp-cli
+38 http 200 http://registry.npmjs.org/gulp-cli
+39 silly registry.get cb [ 200,
+39 silly registry.get   { via: '1.1 varnish, 1.1 SRMUIS',
+39 silly registry.get     connection: 'Keep-Alive',
+39 silly registry.get     'proxy-connection': 'Keep-Alive',
+39 silly registry.get     'content-length': '27615',
+39 silly registry.get     age: '0',
+39 silly registry.get     date: 'Sat, 05 Mar 2016 12:14:54 GMT',
+39 silly registry.get     'content-type': 'application/json',
+39 silly registry.get     etag: '"98X391MNN7C3Z9ADJP44SFGGO"',
+39 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+39 silly registry.get     'accept-ranges': 'bytes',
+39 silly registry.get     'cache-control': 'max-age=300',
+39 silly registry.get     'x-served-by': 'cache-lhr6326-LHR',
+39 silly registry.get     'x-cache': 'HIT',
+39 silly registry.get     'x-cache-hits': '1',
+39 silly registry.get     'x-timer': 'S1457180094.124383,VS0,VE353',
+39 silly registry.get     vary: 'Accept' } ]
+40 silly addNameRange number 2 { name: 'gulp-cli', range: '*', hasData: true }
+41 silly addNameRange versions [ 'gulp-cli',
+41 silly addNameRange   [ '0.1.0',
+41 silly addNameRange     '0.1.3',
+41 silly addNameRange     '0.1.4',
+41 silly addNameRange     '0.1.5',
+41 silly addNameRange     '0.2.0',
+41 silly addNameRange     '0.3.0',
+41 silly addNameRange     '1.0.0',
+41 silly addNameRange     '1.1.0',
+41 silly addNameRange     '1.1.1',
+41 silly addNameRange     '1.2.0',
+41 silly addNameRange     '1.2.1' ] ]
+42 verbose addNamed [ 'gulp-cli', '1.2.1' ]
+43 verbose addNamed [ '1.2.1', '1.2.1' ]
+44 silly lockFile df40f7fc-gulp-cli-1-2-1 gulp-cli@1.2.1
+45 verbose lock gulp-cli@1.2.1 /home/parth/.npm/df40f7fc-gulp-cli-1-2-1.lock
+46 silly lockFile ccd4c098--org-gulp-cli-gulp-cli-1-2-1-tgz http://registry.npmjs.org/gulp-cli/-/gulp-cli-1.2.1.tgz
+47 verbose lock http://registry.npmjs.org/gulp-cli/-/gulp-cli-1.2.1.tgz /home/parth/.npm/ccd4c098--org-gulp-cli-gulp-cli-1-2-1-tgz.lock
+48 verbose addRemoteTarball [ 'http://registry.npmjs.org/gulp-cli/-/gulp-cli-1.2.1.tgz',
+48 verbose addRemoteTarball   '9fd52c50e44fe8eb04a54b3cee23d4a021e3fd3d' ]
+49 info retry fetch attempt 1 at 17:44:52
+50 verbose fetch to= /home/parth/tmp/npm-10103-RShI29wf/1457180092133-0.8575719108339399/tmp.tgz
+51 http GET http://registry.npmjs.org/gulp-cli/-/gulp-cli-1.2.1.tgz
+52 http 200 http://registry.npmjs.org/gulp-cli/-/gulp-cli-1.2.1.tgz
+53 verbose tar unpack /home/parth/tmp/npm-10103-RShI29wf/1457180092133-0.8575719108339399/tmp.tgz
+54 silly lockFile 307282fc-92133-0-8575719108339399-package tar:///home/parth/tmp/npm-10103-RShI29wf/1457180092133-0.8575719108339399/package
+55 verbose lock tar:///home/parth/tmp/npm-10103-RShI29wf/1457180092133-0.8575719108339399/package /home/parth/.npm/307282fc-92133-0-8575719108339399-package.lock
+56 silly lockFile 0f43d129-92133-0-8575719108339399-tmp-tgz tar:///home/parth/tmp/npm-10103-RShI29wf/1457180092133-0.8575719108339399/tmp.tgz
+57 verbose lock tar:///home/parth/tmp/npm-10103-RShI29wf/1457180092133-0.8575719108339399/tmp.tgz /home/parth/.npm/0f43d129-92133-0-8575719108339399-tmp-tgz.lock
+58 silly gunzTarPerm modes [ '755', '644' ]
+59 silly gunzTarPerm extractEntry package.json
+60 silly gunzTarPerm extractEntry README.md
+61 silly gunzTarPerm extractEntry LICENSE
+62 silly gunzTarPerm extractEntry index.js
+63 silly gunzTarPerm extractEntry bin/gulp.js
+64 silly gunzTarPerm extractEntry completion/README.md
+65 silly gunzTarPerm extractEntry completion/bash
+66 silly gunzTarPerm extractEntry completion/fish
+67 silly gunzTarPerm extractEntry completion/powershell
+68 silly gunzTarPerm extractEntry completion/zsh
+69 silly gunzTarPerm extractEntry gulp.1
+70 silly gunzTarPerm extractEntry lib/shared/cliOptions.js
+71 silly gunzTarPerm extractEntry lib/shared/completion.js
+72 silly gunzTarPerm extractEntry lib/shared/exit.js
+73 silly gunzTarPerm extractEntry lib/shared/getBlacklist.js
+74 silly gunzTarPerm extractEntry lib/shared/registerExports.js
+75 silly gunzTarPerm extractEntry lib/shared/verifyDependencies.js
+76 silly gunzTarPerm extractEntry lib/shared/log/blacklistError.js
+77 silly gunzTarPerm extractEntry lib/shared/log/tasks.js
+78 silly gunzTarPerm extractEntry lib/shared/log/toConsole.js
+79 silly gunzTarPerm extractEntry lib/shared/log/verify.js
+80 silly gunzTarPerm extractEntry lib/versioned/^3.7.0/formatError.js
+81 silly gunzTarPerm extractEntry lib/versioned/^3.7.0/index.js
+82 silly gunzTarPerm extractEntry lib/versioned/^3.7.0/taskTree.js
+83 silly gunzTarPerm extractEntry lib/versioned/^3.7.0/log/events.js
+84 silly gunzTarPerm extractEntry lib/versioned/^3.7.0/log/tasksSimple.js
+85 silly gunzTarPerm extractEntry lib/versioned/^4.0.0/formatError.js
+86 silly gunzTarPerm extractEntry lib/versioned/^4.0.0/index.js
+87 silly gunzTarPerm extractEntry lib/versioned/^4.0.0/log/events.js
+88 silly gunzTarPerm extractEntry lib/versioned/^4.0.0/log/syncTask.js
+89 silly gunzTarPerm extractEntry lib/versioned/^4.0.0/log/tasksSimple.js
+90 silly gunzTarPerm extractEntry lib/versioned/^4.0.0-alpha.1/index.js
+91 silly gunzTarPerm extractEntry lib/versioned/^4.0.0-alpha.2/index.js
+92 silly lockFile 307282fc-92133-0-8575719108339399-package tar:///home/parth/tmp/npm-10103-RShI29wf/1457180092133-0.8575719108339399/package
+93 silly lockFile 307282fc-92133-0-8575719108339399-package tar:///home/parth/tmp/npm-10103-RShI29wf/1457180092133-0.8575719108339399/package
+94 silly lockFile 0f43d129-92133-0-8575719108339399-tmp-tgz tar:///home/parth/tmp/npm-10103-RShI29wf/1457180092133-0.8575719108339399/tmp.tgz
+95 silly lockFile 0f43d129-92133-0-8575719108339399-tmp-tgz tar:///home/parth/tmp/npm-10103-RShI29wf/1457180092133-0.8575719108339399/tmp.tgz
+96 verbose tar pack [ '/home/parth/.npm/gulp-cli/1.2.1/package.tgz',
+96 verbose tar pack   '/home/parth/tmp/npm-10103-RShI29wf/1457180092133-0.8575719108339399/package' ]
+97 verbose tarball /home/parth/.npm/gulp-cli/1.2.1/package.tgz
+98 verbose folder /home/parth/tmp/npm-10103-RShI29wf/1457180092133-0.8575719108339399/package
+99 silly lockFile 307282fc-92133-0-8575719108339399-package tar:///home/parth/tmp/npm-10103-RShI29wf/1457180092133-0.8575719108339399/package
+100 verbose lock tar:///home/parth/tmp/npm-10103-RShI29wf/1457180092133-0.8575719108339399/package /home/parth/.npm/307282fc-92133-0-8575719108339399-package.lock
+101 silly lockFile ae2c8749-h-npm-gulp-cli-1-2-1-package-tgz tar:///home/parth/.npm/gulp-cli/1.2.1/package.tgz
+102 verbose lock tar:///home/parth/.npm/gulp-cli/1.2.1/package.tgz /home/parth/.npm/ae2c8749-h-npm-gulp-cli-1-2-1-package-tgz.lock
+103 silly lockFile 307282fc-92133-0-8575719108339399-package tar:///home/parth/tmp/npm-10103-RShI29wf/1457180092133-0.8575719108339399/package
+104 silly lockFile 307282fc-92133-0-8575719108339399-package tar:///home/parth/tmp/npm-10103-RShI29wf/1457180092133-0.8575719108339399/package
+105 silly lockFile ae2c8749-h-npm-gulp-cli-1-2-1-package-tgz tar:///home/parth/.npm/gulp-cli/1.2.1/package.tgz
+106 silly lockFile ae2c8749-h-npm-gulp-cli-1-2-1-package-tgz tar:///home/parth/.npm/gulp-cli/1.2.1/package.tgz
+107 silly lockFile 7ac42e50-parth-npm-gulp-cli-1-2-1-package /home/parth/.npm/gulp-cli/1.2.1/package
+108 verbose lock /home/parth/.npm/gulp-cli/1.2.1/package /home/parth/.npm/7ac42e50-parth-npm-gulp-cli-1-2-1-package.lock
+109 silly lockFile 7ac42e50-parth-npm-gulp-cli-1-2-1-package /home/parth/.npm/gulp-cli/1.2.1/package
+110 silly lockFile 7ac42e50-parth-npm-gulp-cli-1-2-1-package /home/parth/.npm/gulp-cli/1.2.1/package
+111 verbose tar unpack /home/parth/.npm/gulp-cli/1.2.1/package.tgz
+112 silly lockFile 3e97d2dc-parth-npm-gulp-cli-1-2-1-package tar:///home/parth/.npm/gulp-cli/1.2.1/package
+113 verbose lock tar:///home/parth/.npm/gulp-cli/1.2.1/package /home/parth/.npm/3e97d2dc-parth-npm-gulp-cli-1-2-1-package.lock
+114 silly lockFile ae2c8749-h-npm-gulp-cli-1-2-1-package-tgz tar:///home/parth/.npm/gulp-cli/1.2.1/package.tgz
+115 verbose lock tar:///home/parth/.npm/gulp-cli/1.2.1/package.tgz /home/parth/.npm/ae2c8749-h-npm-gulp-cli-1-2-1-package-tgz.lock
+116 silly gunzTarPerm modes [ '755', '644' ]
+117 silly gunzTarPerm extractEntry package.json
+118 silly gunzTarPerm extractEntry README.md
+119 silly gunzTarPerm extractEntry index.js
+120 silly gunzTarPerm extractEntry bin/gulp.js
+121 silly gunzTarPerm extractEntry completion/README.md
+122 silly gunzTarPerm extractEntry completion/bash
+123 silly gunzTarPerm extractEntry completion/fish
+124 silly gunzTarPerm extractEntry completion/powershell
+125 silly gunzTarPerm extractEntry completion/zsh
+126 silly gunzTarPerm extractEntry gulp.1
+127 silly gunzTarPerm extractEntry lib/shared/cliOptions.js
+128 silly gunzTarPerm extractEntry lib/shared/completion.js
+129 silly gunzTarPerm extractEntry lib/shared/exit.js
+130 silly gunzTarPerm extractEntry lib/shared/getBlacklist.js
+131 silly gunzTarPerm extractEntry lib/shared/registerExports.js
+132 silly gunzTarPerm extractEntry lib/shared/verifyDependencies.js
+133 silly gunzTarPerm extractEntry lib/shared/log/blacklistError.js
+134 silly gunzTarPerm extractEntry lib/shared/log/tasks.js
+135 silly gunzTarPerm extractEntry lib/shared/log/toConsole.js
+136 silly gunzTarPerm extractEntry lib/shared/log/verify.js
+137 silly gunzTarPerm extractEntry lib/versioned/^3.7.0/formatError.js
+138 silly gunzTarPerm extractEntry lib/versioned/^3.7.0/index.js
+139 silly gunzTarPerm extractEntry lib/versioned/^3.7.0/taskTree.js
+140 silly gunzTarPerm extractEntry lib/versioned/^3.7.0/log/events.js
+141 silly gunzTarPerm extractEntry lib/versioned/^3.7.0/log/tasksSimple.js
+142 silly gunzTarPerm extractEntry lib/versioned/^4.0.0/formatError.js
+143 silly gunzTarPerm extractEntry lib/versioned/^4.0.0/index.js
+144 silly gunzTarPerm extractEntry lib/versioned/^4.0.0/log/events.js
+145 silly gunzTarPerm extractEntry lib/versioned/^4.0.0/log/syncTask.js
+146 silly gunzTarPerm extractEntry lib/versioned/^4.0.0/log/tasksSimple.js
+147 silly gunzTarPerm extractEntry lib/versioned/^4.0.0-alpha.1/index.js
+148 silly gunzTarPerm extractEntry lib/versioned/^4.0.0-alpha.2/index.js
+149 silly lockFile 3e97d2dc-parth-npm-gulp-cli-1-2-1-package tar:///home/parth/.npm/gulp-cli/1.2.1/package
+150 silly lockFile 3e97d2dc-parth-npm-gulp-cli-1-2-1-package tar:///home/parth/.npm/gulp-cli/1.2.1/package
+151 silly lockFile ae2c8749-h-npm-gulp-cli-1-2-1-package-tgz tar:///home/parth/.npm/gulp-cli/1.2.1/package.tgz
+152 silly lockFile ae2c8749-h-npm-gulp-cli-1-2-1-package-tgz tar:///home/parth/.npm/gulp-cli/1.2.1/package.tgz
+153 verbose chmod /home/parth/.npm/gulp-cli/1.2.1/package.tgz 644
+154 verbose chown /home/parth/.npm/gulp-cli/1.2.1/package.tgz [ 1000, 1000 ]
+155 silly lockFile ccd4c098--org-gulp-cli-gulp-cli-1-2-1-tgz http://registry.npmjs.org/gulp-cli/-/gulp-cli-1.2.1.tgz
+156 silly lockFile ccd4c098--org-gulp-cli-gulp-cli-1-2-1-tgz http://registry.npmjs.org/gulp-cli/-/gulp-cli-1.2.1.tgz
+157 silly lockFile df40f7fc-gulp-cli-1-2-1 gulp-cli@1.2.1
+158 silly lockFile df40f7fc-gulp-cli-1-2-1 gulp-cli@1.2.1
+159 silly lockFile dd34a9c8-gulp-cli gulp-cli@
+160 silly lockFile dd34a9c8-gulp-cli gulp-cli@
+161 http 200 http://registry.npmjs.org/express
+162 silly registry.get cb [ 200,
+162 silly registry.get   { via: '1.1 varnish, 1.1 SRMUIS',
+162 silly registry.get     connection: 'Keep-Alive',
+162 silly registry.get     'proxy-connection': 'Keep-Alive',
+162 silly registry.get     'content-length': '534429',
+162 silly registry.get     age: '56',
+162 silly registry.get     date: 'Sat, 05 Mar 2016 12:14:54 GMT',
+162 silly registry.get     'content-type': 'application/json',
+162 silly registry.get     etag: '"ELAI7XNJYU0RYQ6DQFUV4F1CV"',
+162 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+162 silly registry.get     'accept-ranges': 'bytes',
+162 silly registry.get     'cache-control': 'max-age=300',
+162 silly registry.get     'x-served-by': 'cache-lhr6334-LHR',
+162 silly registry.get     'x-cache': 'HIT',
+162 silly registry.get     'x-cache-hits': '2',
+162 silly registry.get     'x-timer': 'S1457180094.129860,VS0,VE0',
+162 silly registry.get     vary: 'Accept' } ]
+163 silly addNameRange number 2 { name: 'express', range: '*', hasData: true }
+164 silly addNameRange versions [ 'express',
+164 silly addNameRange   [ '0.14.0',
+164 silly addNameRange     '0.14.1',
+164 silly addNameRange     '1.0.0',
+164 silly addNameRange     '1.0.1',
+164 silly addNameRange     '1.0.2',
+164 silly addNameRange     '1.0.3',
+164 silly addNameRange     '1.0.4',
+164 silly addNameRange     '1.0.5',
+164 silly addNameRange     '1.0.6',
+164 silly addNameRange     '1.0.7',
+164 silly addNameRange     '1.0.8',
+164 silly addNameRange     '2.0.0',
+164 silly addNameRange     '2.1.0',
+164 silly addNameRange     '2.1.1',
+164 silly addNameRange     '2.2.0',
+164 silly addNameRange     '2.2.1',
+164 silly addNameRange     '2.2.2',
+164 silly addNameRange     '2.3.0',
+164 silly addNameRange     '2.3.1',
+164 silly addNameRange     '2.3.2',
+164 silly addNameRange     '2.3.3',
+164 silly addNameRange     '2.3.4',
+164 silly addNameRange     '2.3.5',
+164 silly addNameRange     '2.3.6',
+164 silly addNameRange     '2.3.7',
+164 silly addNameRange     '2.3.8',
+164 silly addNameRange     '2.3.9',
+164 silly addNameRange     '2.3.10',
+164 silly addNameRange     '2.3.11',
+164 silly addNameRange     '2.3.12',
+164 silly addNameRange     '2.4.0',
+164 silly addNameRange     '2.4.1',
+164 silly addNameRange     '2.4.2',
+164 silly addNameRange     '2.4.3',
+164 silly addNameRange     '2.4.4',
+164 silly addNameRange     '2.4.5',
+164 silly addNameRange     '2.4.6',
+164 silly addNameRange     '2.4.7',
+164 silly addNameRange     '2.5.0',
+164 silly addNameRange     '2.5.1',
+164 silly addNameRange     '2.5.2',
+164 silly addNameRange     '2.5.3',
+164 silly addNameRange     '2.5.4',
+164 silly addNameRange     '2.5.5',
+164 silly addNameRange     '2.5.6',
+164 silly addNameRange     '2.5.7',
+164 silly addNameRange     '2.5.8',
+164 silly addNameRange     '2.5.9',
+164 silly addNameRange     '2.5.10',
+164 silly addNameRange     '2.5.11',
+164 silly addNameRange     '3.0.0',
+164 silly addNameRange     '3.0.1',
+164 silly addNameRange     '3.0.2',
+164 silly addNameRange     '3.0.3',
+164 silly addNameRange     '3.0.4',
+164 silly addNameRange     '3.0.5',
+164 silly addNameRange     '3.0.6',
+164 silly addNameRange     '3.1.0',
+164 silly addNameRange     '3.1.1',
+164 silly addNameRange     '3.1.2',
+164 silly addNameRange     '3.2.0',
+164 silly addNameRange     '3.2.1',
+164 silly addNameRange     '3.2.2',
+164 silly addNameRange     '3.2.3',
+164 silly addNameRange     '3.2.4',
+164 silly addNameRange     '3.2.5',
+164 silly addNameRange     '3.2.6',
+164 silly addNameRange     '3.3.0',
+164 silly addNameRange     '3.3.1',
+164 silly addNameRange     '3.3.2',
+164 silly addNameRange     '3.3.3',
+164 silly addNameRange     '3.3.4',
+164 silly addNameRange     '3.3.5',
+164 silly addNameRange     '3.3.6',
+164 silly addNameRange     '1.0.0-beta',
+164 silly addNameRange     '1.0.0-beta2',
+164 silly addNameRange     '1.0.0-rc',
+164 silly addNameRange     '1.0.0-rc2',
+164 silly addNameRange     '1.0.0-rc3',
+164 silly addNameRange     '1.0.0-rc4',
+164 silly addNameRange     '2.0.0-beta',
+164 silly addNameRange     '2.0.0-beta2',
+164 silly addNameRange     '2.0.0-beta3',
+164 silly addNameRange     '2.0.0-rc',
+164 silly addNameRange     '2.0.0-rc2',
+164 silly addNameRange     '2.0.0-rc3',
+164 silly addNameRange     '3.0.0-alpha1',
+164 silly addNameRange     '3.0.0-alpha2',
+164 silly addNameRange     '3.0.0-alpha3',
+164 silly addNameRange     '3.0.0-alpha4',
+164 silly addNameRange     '3.0.0-alpha5',
+164 silly addNameRange     '3.0.0-beta1',
+164 silly addNameRange     '3.0.0-beta2',
+164 silly addNameRange     '3.0.0-beta3',
+164 silly addNameRange     '3.0.0-beta4',
+164 silly addNameRange     '3.0.0-beta6',
+164 silly addNameRange     '3.0.0-beta7',
+164 silly addNameRange     '3.0.0-rc1',
+164 silly addNameRange     '3.0.0-rc2',
+164 silly addNameRange     '3.0.0-rc3',
+164 silly addNameRange     '3.0.0-rc4',
+164 silly addNameRange     '3.0.0-rc5',
+164 silly addNameRange     '3.3.7',
+164 silly addNameRange     '3.3.8',
+164 silly addNameRange     '3.4.0',
+164 silly addNameRange     '3.4.1',
+164 silly addNameRange     '3.4.2',
+164 silly addNameRange     '3.4.3',
+164 silly addNameRange     '3.4.4',
+164 silly addNameRange     '3.4.5',
+164 silly addNameRange     '3.4.6',
+164 silly addNameRange     '3.4.7',
+164 silly addNameRange     '3.4.8',
+164 silly addNameRange     '4.0.0-rc1',
+164 silly addNameRange     '4.0.0-rc2',
+164 silly addNameRange     '3.5.0',
+164 silly addNameRange     '4.0.0-rc3',
+164 silly addNameRange     '4.0.0-rc4',
+164 silly addNameRange     '3.5.1',
+164 silly addNameRange     '4.0.0',
+164 silly addNameRange     '3.5.2',
+164 silly addNameRange     '4.1.0',
+164 silly addNameRange     '4.1.1',
+164 silly addNameRange     '3.5.3',
+164 silly addNameRange     '4.1.2',
+164 silly addNameRange     '3.6.0',
+164 silly addNameRange     '4.2.0',
+164 silly addNameRange     '3.7.0',
+164 silly addNameRange     '3.8.0',
+164 silly addNameRange     '4.3.0',
+164 silly addNameRange     '4.3.1',
+164 silly addNameRange     '3.8.1',
+164 silly addNameRange     '4.3.2',
+164 silly addNameRange     '3.9.0',
+164 silly addNameRange     '4.4.0',
+164 silly addNameRange     '4.4.1',
+164 silly addNameRange     '3.10.0',
+164 silly addNameRange     '3.10.1',
+164 silly addNameRange     '3.10.2',
+164 silly addNameRange     '3.10.3',
+164 silly addNameRange     '3.10.4',
+164 silly addNameRange     '4.4.2',
+164 silly addNameRange     '3.10.5',
+164 silly addNameRange     '4.4.3',
+164 silly addNameRange     '3.11.0',
+164 silly addNameRange     '4.4.4',
+164 silly addNameRange     '3.12.0',
+164 silly addNameRange     '3.12.1',
+164 silly addNameRange     '4.4.5',
+164 silly addNameRange     '3.13.0',
+164 silly addNameRange     '4.5.0',
+164 silly addNameRange     '4.5.1',
+164 silly addNameRange     '3.14.0',
+164 silly addNameRange     '4.6.0',
+164 silly addNameRange     '4.6.1',
+164 silly addNameRange     '3.15.0',
+164 silly addNameRange     '4.7.0',
+164 silly addNameRange     '3.15.1',
+164 silly addNameRange     '4.7.1',
+164 silly addNameRange     '3.15.2',
+164 silly addNameRange     '4.7.2',
+164 silly addNameRange     '4.7.3',
+164 silly addNameRange     '3.15.3',
+164 silly addNameRange     '4.7.4',
+164 silly addNameRange     '3.16.0',
+164 silly addNameRange     '4.8.0',
+164 silly addNameRange     '3.16.1',
+164 silly addNameRange     '4.8.1',
+164 silly addNameRange     '3.16.2',
+164 silly addNameRange     '4.8.2',
+164 silly addNameRange     '3.16.3',
+164 silly addNameRange     '3.16.4',
+164 silly addNameRange     '4.8.3',
+164 silly addNameRange     '3.16.5',
+164 silly addNameRange     '3.16.6',
+164 silly addNameRange     '4.8.4',
+164 silly addNameRange     '3.16.7',
+164 silly addNameRange     '4.8.5',
+164 silly addNameRange     '3.16.8',
+164 silly addNameRange     '4.8.6',
+164 silly addNameRange     '3.16.9',
+164 silly addNameRange     '4.8.7',
+164 silly addNameRange     '3.16.10',
+164 silly addNameRange     '4.8.8',
+164 silly addNameRange     '3.17.0',
+164 silly addNameRange     '3.17.1',
+164 silly addNameRange     '4.9.0',
+164 silly addNameRange     '3.17.2',
+164 silly addNameRange     '4.9.1',
+164 silly addNameRange     '4.9.2',
+164 silly addNameRange     '3.17.3',
+164 silly addNameRange     '4.9.3',
+164 silly addNameRange     '3.17.4',
+164 silly addNameRange     '4.9.4',
+164 silly addNameRange     '3.17.5',
+164 silly addNameRange     '4.9.5',
+164 silly addNameRange     '3.17.6',
+164 silly addNameRange     '3.17.7',
+164 silly addNameRange     '4.9.6',
+164 silly addNameRange     '4.9.7',
+164 silly addNameRange     '3.17.8',
+164 silly addNameRange     '4.9.8',
+164 silly addNameRange     '3.18.0',
+164 silly addNameRange     '3.18.1',
+164 silly addNameRange     '4.10.0',
+164 silly addNameRange     '3.18.2',
+164 silly addNameRange     '4.10.1',
+164 silly addNameRange     '5.0.0-alpha.1',
+164 silly addNameRange     '3.18.3',
+164 silly addNameRange     '4.10.2',
+164 silly addNameRange     '3.18.4',
+164 silly addNameRange     '4.10.3',
+164 silly addNameRange     '4.10.4',
+164 silly addNameRange     '4.10.5',
+164 silly addNameRange     '3.18.5',
+164 silly addNameRange     '3.18.6',
+164 silly addNameRange     '4.10.6',
+164 silly addNameRange     '4.10.7',
+164 silly addNameRange     '3.19.0',
+164 silly addNameRange     '4.10.8',
+164 silly addNameRange     '4.11.0',
+164 silly addNameRange     '3.19.1',
+164 silly addNameRange     '4.11.1',
+164 silly addNameRange     '3.19.2',
+164 silly addNameRange     '4.11.2',
+164 silly addNameRange     '3.20.0',
+164 silly addNameRange     '4.12.0',
+164 silly addNameRange     '3.20.1',
+164 silly addNameRange     '4.12.1',
+164 silly addNameRange     '4.12.2',
+164 silly addNameRange     '3.20.2',
+164 silly addNameRange     '4.12.3',
+164 silly addNameRange     '3.20.3',
+164 silly addNameRange     '4.12.4',
+164 silly addNameRange     '3.21.0',
+164 silly addNameRange     '4.13.0',
+164 silly addNameRange     '3.21.1',
+164 silly addNameRange     '4.13.1',
+164 silly addNameRange     '5.0.0-alpha.2',
+164 silly addNameRange     '3.21.2',
+164 silly addNameRange     '4.13.2',
+164 silly addNameRange     '4.13.3',
+164 silly addNameRange     '4.13.4' ] ]
+165 verbose addNamed [ 'express', '4.13.4' ]
+166 verbose addNamed [ '4.13.4', '4.13.4' ]
+167 silly lockFile 23607823-express-4-13-4 express@4.13.4
+168 verbose lock express@4.13.4 /home/parth/.npm/23607823-express-4-13-4.lock
+169 silly lockFile a53be0cb-s-org-express-express-4-13-4-tgz http://registry.npmjs.org/express/-/express-4.13.4.tgz
+170 verbose lock http://registry.npmjs.org/express/-/express-4.13.4.tgz /home/parth/.npm/a53be0cb-s-org-express-express-4-13-4-tgz.lock
+171 verbose addRemoteTarball [ 'http://registry.npmjs.org/express/-/express-4.13.4.tgz',
+171 verbose addRemoteTarball   '3c0b76f3c77590c8345739061ec0bd3ba067ec24' ]
+172 info retry fetch attempt 1 at 17:44:53
+173 verbose fetch to= /home/parth/tmp/npm-10103-RShI29wf/1457180093043-0.8575033405795693/tmp.tgz
+174 http GET http://registry.npmjs.org/express/-/express-4.13.4.tgz
+175 http 200 http://registry.npmjs.org/express/-/express-4.13.4.tgz
+176 verbose tar unpack /home/parth/tmp/npm-10103-RShI29wf/1457180093043-0.8575033405795693/tmp.tgz
+177 silly lockFile 99056c57-93043-0-8575033405795693-package tar:///home/parth/tmp/npm-10103-RShI29wf/1457180093043-0.8575033405795693/package
+178 verbose lock tar:///home/parth/tmp/npm-10103-RShI29wf/1457180093043-0.8575033405795693/package /home/parth/.npm/99056c57-93043-0-8575033405795693-package.lock
+179 silly lockFile b41fa663-93043-0-8575033405795693-tmp-tgz tar:///home/parth/tmp/npm-10103-RShI29wf/1457180093043-0.8575033405795693/tmp.tgz
+180 verbose lock tar:///home/parth/tmp/npm-10103-RShI29wf/1457180093043-0.8575033405795693/tmp.tgz /home/parth/.npm/b41fa663-93043-0-8575033405795693-tmp-tgz.lock
+181 silly gunzTarPerm modes [ '755', '644' ]
+182 silly gunzTarPerm extractEntry package.json
+183 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+184 silly gunzTarPerm extractEntry LICENSE
+185 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+186 silly gunzTarPerm extractEntry index.js
+187 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+188 silly gunzTarPerm extractEntry History.md
+189 silly gunzTarPerm modified mode [ 'History.md', 438, 420 ]
+190 silly gunzTarPerm extractEntry Readme.md
+191 silly gunzTarPerm modified mode [ 'Readme.md', 438, 420 ]
+192 silly gunzTarPerm extractEntry lib/application.js
+193 silly gunzTarPerm modified mode [ 'lib/application.js', 438, 420 ]
+194 silly gunzTarPerm extractEntry lib/express.js
+195 silly gunzTarPerm modified mode [ 'lib/express.js', 438, 420 ]
+196 silly gunzTarPerm extractEntry lib/request.js
+197 silly gunzTarPerm modified mode [ 'lib/request.js', 438, 420 ]
+198 silly gunzTarPerm extractEntry lib/response.js
+199 silly gunzTarPerm modified mode [ 'lib/response.js', 438, 420 ]
+200 silly gunzTarPerm extractEntry lib/utils.js
+201 silly gunzTarPerm modified mode [ 'lib/utils.js', 438, 420 ]
+202 silly gunzTarPerm extractEntry lib/view.js
+203 silly gunzTarPerm modified mode [ 'lib/view.js', 438, 420 ]
+204 silly gunzTarPerm extractEntry lib/middleware/init.js
+205 silly gunzTarPerm modified mode [ 'lib/middleware/init.js', 438, 420 ]
+206 silly gunzTarPerm extractEntry lib/middleware/query.js
+207 silly gunzTarPerm modified mode [ 'lib/middleware/query.js', 438, 420 ]
+208 silly gunzTarPerm extractEntry lib/router/index.js
+209 silly gunzTarPerm modified mode [ 'lib/router/index.js', 438, 420 ]
+210 silly gunzTarPerm extractEntry lib/router/layer.js
+211 silly gunzTarPerm modified mode [ 'lib/router/layer.js', 438, 420 ]
+212 silly gunzTarPerm extractEntry lib/router/route.js
+213 silly gunzTarPerm modified mode [ 'lib/router/route.js', 438, 420 ]
+214 silly lockFile 99056c57-93043-0-8575033405795693-package tar:///home/parth/tmp/npm-10103-RShI29wf/1457180093043-0.8575033405795693/package
+215 silly lockFile 99056c57-93043-0-8575033405795693-package tar:///home/parth/tmp/npm-10103-RShI29wf/1457180093043-0.8575033405795693/package
+216 silly lockFile b41fa663-93043-0-8575033405795693-tmp-tgz tar:///home/parth/tmp/npm-10103-RShI29wf/1457180093043-0.8575033405795693/tmp.tgz
+217 silly lockFile b41fa663-93043-0-8575033405795693-tmp-tgz tar:///home/parth/tmp/npm-10103-RShI29wf/1457180093043-0.8575033405795693/tmp.tgz
+218 verbose tar pack [ '/home/parth/.npm/express/4.13.4/package.tgz',
+218 verbose tar pack   '/home/parth/tmp/npm-10103-RShI29wf/1457180093043-0.8575033405795693/package' ]
+219 verbose tarball /home/parth/.npm/express/4.13.4/package.tgz
+220 verbose folder /home/parth/tmp/npm-10103-RShI29wf/1457180093043-0.8575033405795693/package
+221 silly lockFile 99056c57-93043-0-8575033405795693-package tar:///home/parth/tmp/npm-10103-RShI29wf/1457180093043-0.8575033405795693/package
+222 verbose lock tar:///home/parth/tmp/npm-10103-RShI29wf/1457180093043-0.8575033405795693/package /home/parth/.npm/99056c57-93043-0-8575033405795693-package.lock
+223 silly lockFile 9cd9ccad-h-npm-express-4-13-4-package-tgz tar:///home/parth/.npm/express/4.13.4/package.tgz
+224 verbose lock tar:///home/parth/.npm/express/4.13.4/package.tgz /home/parth/.npm/9cd9ccad-h-npm-express-4-13-4-package-tgz.lock
+225 silly lockFile 99056c57-93043-0-8575033405795693-package tar:///home/parth/tmp/npm-10103-RShI29wf/1457180093043-0.8575033405795693/package
+226 silly lockFile 99056c57-93043-0-8575033405795693-package tar:///home/parth/tmp/npm-10103-RShI29wf/1457180093043-0.8575033405795693/package
+227 silly lockFile 9cd9ccad-h-npm-express-4-13-4-package-tgz tar:///home/parth/.npm/express/4.13.4/package.tgz
+228 silly lockFile 9cd9ccad-h-npm-express-4-13-4-package-tgz tar:///home/parth/.npm/express/4.13.4/package.tgz
+229 silly lockFile cf2f4a84-parth-npm-express-4-13-4-package /home/parth/.npm/express/4.13.4/package
+230 verbose lock /home/parth/.npm/express/4.13.4/package /home/parth/.npm/cf2f4a84-parth-npm-express-4-13-4-package.lock
+231 silly lockFile cf2f4a84-parth-npm-express-4-13-4-package /home/parth/.npm/express/4.13.4/package
+232 silly lockFile cf2f4a84-parth-npm-express-4-13-4-package /home/parth/.npm/express/4.13.4/package
+233 verbose tar unpack /home/parth/.npm/express/4.13.4/package.tgz
+234 silly lockFile 884ec999-parth-npm-express-4-13-4-package tar:///home/parth/.npm/express/4.13.4/package
+235 verbose lock tar:///home/parth/.npm/express/4.13.4/package /home/parth/.npm/884ec999-parth-npm-express-4-13-4-package.lock
+236 silly lockFile 9cd9ccad-h-npm-express-4-13-4-package-tgz tar:///home/parth/.npm/express/4.13.4/package.tgz
+237 verbose lock tar:///home/parth/.npm/express/4.13.4/package.tgz /home/parth/.npm/9cd9ccad-h-npm-express-4-13-4-package-tgz.lock
+238 silly gunzTarPerm modes [ '755', '644' ]
+239 silly gunzTarPerm extractEntry package.json
+240 silly gunzTarPerm extractEntry LICENSE
+241 silly gunzTarPerm extractEntry index.js
+242 silly gunzTarPerm extractEntry History.md
+243 silly gunzTarPerm extractEntry Readme.md
+244 silly gunzTarPerm extractEntry lib/application.js
+245 silly gunzTarPerm extractEntry lib/express.js
+246 silly gunzTarPerm extractEntry lib/request.js
+247 silly gunzTarPerm extractEntry lib/response.js
+248 silly gunzTarPerm extractEntry lib/utils.js
+249 silly gunzTarPerm extractEntry lib/view.js
+250 silly gunzTarPerm extractEntry lib/middleware/init.js
+251 silly gunzTarPerm extractEntry lib/middleware/query.js
+252 silly gunzTarPerm extractEntry lib/router/index.js
+253 silly gunzTarPerm extractEntry lib/router/layer.js
+254 silly gunzTarPerm extractEntry lib/router/route.js
+255 silly lockFile 884ec999-parth-npm-express-4-13-4-package tar:///home/parth/.npm/express/4.13.4/package
+256 silly lockFile 884ec999-parth-npm-express-4-13-4-package tar:///home/parth/.npm/express/4.13.4/package
+257 silly lockFile 9cd9ccad-h-npm-express-4-13-4-package-tgz tar:///home/parth/.npm/express/4.13.4/package.tgz
+258 silly lockFile 9cd9ccad-h-npm-express-4-13-4-package-tgz tar:///home/parth/.npm/express/4.13.4/package.tgz
+259 verbose chmod /home/parth/.npm/express/4.13.4/package.tgz 644
+260 verbose chown /home/parth/.npm/express/4.13.4/package.tgz [ 1000, 1000 ]
+261 silly lockFile a53be0cb-s-org-express-express-4-13-4-tgz http://registry.npmjs.org/express/-/express-4.13.4.tgz
+262 silly lockFile a53be0cb-s-org-express-express-4-13-4-tgz http://registry.npmjs.org/express/-/express-4.13.4.tgz
+263 silly lockFile 23607823-express-4-13-4 express@4.13.4
+264 silly lockFile 23607823-express-4-13-4 express@4.13.4
+265 silly lockFile 64a534c1-express express@
+266 silly lockFile 64a534c1-express express@
+267 silly resolved [ { name: 'gulp-cli',
+267 silly resolved     version: '1.2.1',
+267 silly resolved     description: 'Command line interface for gulp',
+267 silly resolved     author:
+267 silly resolved      { name: 'Gulp Team',
+267 silly resolved        email: 'team@gulpjs.com',
+267 silly resolved        url: 'http://gulpjs.com/' },
+267 silly resolved     contributors: [],
+267 silly resolved     homepage: 'http://gulpjs.com',
+267 silly resolved     repository: { type: 'git', url: 'git://github.com/gulpjs/gulp-cli' },
+267 silly resolved     license: 'MIT',
+267 silly resolved     man: [ 'gulp.1' ],
+267 silly resolved     engines: { node: '>= 0.10' },
+267 silly resolved     main: 'index.js',
+267 silly resolved     bin: { gulp: 'bin/gulp.js' },
+267 silly resolved     files: [ 'index.js', 'lib', 'bin', 'completion', 'gulp.1' ],
+267 silly resolved     scripts:
+267 silly resolved      { coveralls: 'lab -r lcov | coveralls',
+267 silly resolved        lint: 'eslint . && jscs index.js bin/ lib/ test/',
+267 silly resolved        prepublish: 'marked-man --name gulp docs/CLI.md > gulp.1',
+267 silly resolved        pretest: 'npm run lint',
+267 silly resolved        test: 'lab test/*.js -cv' },
+267 silly resolved     dependencies:
+267 silly resolved      { archy: '^1.0.0',
+267 silly resolved        chalk: '^1.1.0',
+267 silly resolved        'fancy-log': '^1.1.0',
+267 silly resolved        gulplog: '^1.0.0',
+267 silly resolved        interpret: '^1.0.0',
+267 silly resolved        liftoff: '^2.1.0',
+267 silly resolved        'lodash.sortby': '^4.0.1',
+267 silly resolved        matchdep: '^1.0.0',
+267 silly resolved        'mute-stdout': '^1.0.0',
+267 silly resolved        'pretty-hrtime': '^1.0.0',
+267 silly resolved        'semver-greatest-satisfied-range': '^1.0.0',
+267 silly resolved        tildify: '^1.0.0',
+267 silly resolved        v8flags: '^2.0.9',
+267 silly resolved        wreck: '^6.3.0',
+267 silly resolved        yargs: '^3.28.0' },
+267 silly resolved     devDependencies:
+267 silly resolved      { 'babel-preset-es2015': '^6.5.0',
+267 silly resolved        'babel-register': '^6.5.1',
+267 silly resolved        code: '^1.2.1',
+267 silly resolved        coveralls: '^2.7.0',
+267 silly resolved        eslint: '^1.7.3',
+267 silly resolved        'eslint-config-gulp': '^2.0.0',
+267 silly resolved        'fs-extra': '^0.26.1',
+267 silly resolved        gulp: 'gulpjs/gulp#4.0',
+267 silly resolved        jscs: '^2.3.5',
+267 silly resolved        'jscs-preset-gulp': '^1.0.0',
+267 silly resolved        lab: '^6.2.0',
+267 silly resolved        'marked-man': '^0.1.3' },
+267 silly resolved     keywords: [ 'build', 'stream', 'system', 'make', 'tool', 'asset', 'pipeline' ],
+267 silly resolved     readme: '<p align="center">\n  <a href="http://gulpjs.com">\n    <img height="257" width="114" src="https://raw.githubusercontent.com/gulpjs/artwork/master/gulp-2x.png">\n  </a>\n</p>\n\n# gulp-cli\n\n[![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url] [![Build Status][travis-image]][travis-url] [![AppVeyor Build Status][appveyor-image]][appveyor-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Gitter chat][gitter-image]][gitter-url]\n\nCommand Line Utility for Gulp\n\n## Usage\n\n```bash\n> gulp [flags] tasks\n```\n\n## Custom Metadata\n\nWhen listing tasks with the `gulp -T` command, gulp-cli displays some custom metadata as defined upon task functions. Currently supported properties:\n\n* `task.description` - String of the description to display.\n\n```js\nfunction clean() { ... }\nclean.description = \'Cleans up generated files.\';\n```\n\n* `task.flags` - Object with key/value pairs being flag/description to display.\n\n```js\nfunction build() { ... }\nbuild.flags = {\n  \'--prod\': \'Builds in production mode.\'\n};\n```\n\nExample Usage:\n\n```js\nfunction build() { ... }\nbuild.description = \'Build entire project.\';\nbuild.flags = {\n  \'--prod\': \'Builds in production mode (minification, etc).\'\n};\n// gulp 3.x\ngulp.task(\'build\', build);\n// gulp 4.x\ngulp.task(build);\n```\n\n## Tasks\n\nTasks can be executed by running `gulp <task> <othertask>`. Just running `gulp` will execute the task you registered called `default`. If there is no `default` task, gulp will error.\n\n## Compilers\n\nYou can find a list of supported languages at https://github.com/js-cli/js-interpret. If you would like to add support for a new language, send pull requests/open issues on that project.\n\n## Environment\n\nThe CLI adds process.env.INIT_CWD which is the original cwd it was launched from.\n\n## Flags\n\ngulp has very few flags to know about. All other flags are for tasks to use if needed.\n\n__Some flags only work with gulp 4 and will be ignored when invoked against gulp 3.__\n\n<table>\n  <thead>\n    <tr>\n      <th width="25%">Flag</th>\n      <th width="15%">Short Flag</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>--help</td>\n      <td>-h</td>\n      <td>Show this help.</td>\n    </tr>\n    <tr>\n      <td>--version</td>\n      <td>-v</td>\n      <td>Print the global and local gulp versions.</td>\n    </tr>\n    <tr>\n      <td>--require [path]</td>\n      <td></td>\n      <td>Will require a module before running the gulpfile. This is useful for transpilers but also has other applications.</td>\n    </tr>\n    <tr>\n      <td>--gulpfile [path]</td>\n      <td></td>\n      <td>Manually set path of gulpfile. Useful if you have multiple gulpfiles. This will set the CWD to the gulpfile directory as well.</td>\n    </tr>\n    <tr>\n      <td>--cwd [path]</td>\n      <td></td>\n      <td>Manually set the CWD. The search for the gulpfile, as well as the relativity of all requires will be from here.</td>\n    </tr>\n    <tr>\n      <td>--verify [path (optional)]</td>\n      <td></td>\n      <td>Will verify plugins referenced in project\'s package.json against the plugins blacklist.</td>\n    </tr>\n    <tr>\n      <td>--tasks</td>\n      <td>-T</td>\n      <td>Print the task dependency tree for the loaded gulpfile.</td>\n    </tr>\n    <tr>\n      <td>--depth [number]</td>\n      <td></td>\n      <td>Specify the depth of the task dependency tree to print.</td>\n    </tr>\n    <tr>\n      <td>--tasks-simple</td>\n      <td></td>\n      <td>Print a plaintext list of tasks for the loaded gulpfile.</td>\n    </tr>\n    <tr>\n      <td>--tasks-json [path]</td>\n      <td></td>\n      <td>Print the task dependency tree, in JSON format, for the loaded gulpfile. The [path] argument is optional, and if given writes the JSON to the path.</td>\n    </tr>\n    <tr>\n      <td>--color</td>\n      <td></td>\n      <td>Will force gulp and gulp plugins to display colors, even when no color support is detected.</td>\n    </tr>\n    <tr>\n      <td>--no-color</td>\n      <td></td>\n      <td>Will force gulp and gulp plugins to not display colors, even when color support is detected.</td>\n    </tr>\n    <tr>\n      <td>--silent</td>\n      <td>-S</td>\n      <td>Suppress all gulp logging.</td>\n    </tr>\n    <tr>\n      <td>--continue</td>\n      <td></td>\n      <td>Continue execution of tasks upon failure.</td>\n    </tr>\n    <tr>\n      <td>--log-level</td>\n      <td>-L</td>\n      <td>Set the loglevel. -L for least verbose and -LLLL for most verbose. -LLL is default.</td>\n    </tr>\n  </tbody>\n</table>\n\n## License\n\nMIT\n\n[gittip-url]: https://www.gittip.com/WeAreFractal/\n[gittip-image]: http://img.shields.io/gittip/WeAreFractal.svg\n\n[downloads-image]: http://img.shields.io/npm/dm/gulp-cli.svg\n[npm-url]: https://npmjs.org/package/gulp-cli\n[npm-image]: http://img.shields.io/npm/v/gulp-cli.svg\n\n[travis-url]: https://travis-ci.org/gulpjs/gulp-cli\n[travis-image]: http://img.shields.io/travis/gulpjs/gulp-cli.svg?label=travis-ci\n\n[appveyor-url]: https://ci.appveyor.com/project/gulpjs/gulp-cli\n[appveyor-image]: https://img.shields.io/appveyor/ci/gulpjs/gulp-cli.svg?label=appveyor\n\n[coveralls-url]: https://coveralls.io/r/gulpjs/gulp-cli\n[coveralls-image]: http://img.shields.io/coveralls/gulpjs/gulp-cli/master.svg\n\n[gitter-url]: https://gitter.im/gulpjs/gulp\n[gitter-image]: https://badges.gitter.im/gulpjs/gulp.png\n',
+267 silly resolved     readmeFilename: 'README.md',
+267 silly resolved     bugs: { url: 'https://github.com/gulpjs/gulp-cli/issues' },
+267 silly resolved     _id: 'gulp-cli@1.2.1',
+267 silly resolved     dist: { shasum: 'c79282dda2f7d06c89a6e93b8f333de3c3cc82c4' },
+267 silly resolved     _from: 'gulp-cli@',
+267 silly resolved     _resolved: 'http://registry.npmjs.org/gulp-cli/-/gulp-cli-1.2.1.tgz' },
+267 silly resolved   { name: 'express',
+267 silly resolved     description: 'Fast, unopinionated, minimalist web framework',
+267 silly resolved     version: '4.13.4',
+267 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+267 silly resolved     contributors:
+267 silly resolved      [ [Object],
+267 silly resolved        [Object],
+267 silly resolved        [Object],
+267 silly resolved        [Object],
+267 silly resolved        [Object],
+267 silly resolved        [Object],
+267 silly resolved        [Object] ],
+267 silly resolved     license: 'MIT',
+267 silly resolved     repository: { type: 'git', url: 'git://github.com/expressjs/express' },
+267 silly resolved     keywords:
+267 silly resolved      [ 'express',
+267 silly resolved        'framework',
+267 silly resolved        'sinatra',
+267 silly resolved        'web',
+267 silly resolved        'rest',
+267 silly resolved        'restful',
+267 silly resolved        'router',
+267 silly resolved        'app',
+267 silly resolved        'api' ],
+267 silly resolved     dependencies:
+267 silly resolved      { accepts: '~1.2.12',
+267 silly resolved        'array-flatten': '1.1.1',
+267 silly resolved        'content-disposition': '0.5.1',
+267 silly resolved        'content-type': '~1.0.1',
+267 silly resolved        cookie: '0.1.5',
+267 silly resolved        'cookie-signature': '1.0.6',
+267 silly resolved        debug: '~2.2.0',
+267 silly resolved        depd: '~1.1.0',
+267 silly resolved        'escape-html': '~1.0.3',
+267 silly resolved        etag: '~1.7.0',
+267 silly resolved        finalhandler: '0.4.1',
+267 silly resolved        fresh: '0.3.0',
+267 silly resolved        'merge-descriptors': '1.0.1',
+267 silly resolved        methods: '~1.1.2',
+267 silly resolved        'on-finished': '~2.3.0',
+267 silly resolved        parseurl: '~1.3.1',
+267 silly resolved        'path-to-regexp': '0.1.7',
+267 silly resolved        'proxy-addr': '~1.0.10',
+267 silly resolved        qs: '4.0.0',
+267 silly resolved        'range-parser': '~1.0.3',
+267 silly resolved        send: '0.13.1',
+267 silly resolved        'serve-static': '~1.10.2',
+267 silly resolved        'type-is': '~1.6.6',
+267 silly resolved        'utils-merge': '1.0.0',
+267 silly resolved        vary: '~1.0.1' },
+267 silly resolved     devDependencies:
+267 silly resolved      { after: '0.8.1',
+267 silly resolved        ejs: '2.3.4',
+267 silly resolved        istanbul: '0.4.2',
+267 silly resolved        marked: '0.3.5',
+267 silly resolved        mocha: '2.3.4',
+267 silly resolved        should: '7.1.1',
+267 silly resolved        supertest: '1.1.0',
+267 silly resolved        'body-parser': '~1.14.2',
+267 silly resolved        'connect-redis': '~2.4.1',
+267 silly resolved        'cookie-parser': '~1.4.1',
+267 silly resolved        'cookie-session': '~1.2.0',
+267 silly resolved        'express-session': '~1.13.0',
+267 silly resolved        jade: '~1.11.0',
+267 silly resolved        'method-override': '~2.3.5',
+267 silly resolved        morgan: '~1.6.1',
+267 silly resolved        multiparty: '~4.1.2',
+267 silly resolved        vhost: '~3.0.1' },
+267 silly resolved     engines: { node: '>= 0.10.0' },
+267 silly resolved     files: [ 'LICENSE', 'History.md', 'Readme.md', 'index.js', 'lib/' ],
+267 silly resolved     scripts:
+267 silly resolved      { test: 'mocha --require test/support/env --reporter spec --bail --check-leaks test/ test/acceptance/',
+267 silly resolved        'test-ci': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --require test/support/env --reporter spec --check-leaks test/ test/acceptance/',
+267 silly resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --require test/support/env --reporter dot --check-leaks test/ test/acceptance/',
+267 silly resolved        'test-tap': 'mocha --require test/support/env --reporter tap --check-leaks test/ test/acceptance/' },
+267 silly resolved     readme: '[![Express Logo](https://i.cloudup.com/zfY6lL7eFa-3000x3000.png)](http://expressjs.com/)\n\n  Fast, unopinionated, minimalist web framework for [node](http://nodejs.org).\n\n  [![NPM Version][npm-image]][npm-url]\n  [![NPM Downloads][downloads-image]][downloads-url]\n  [![Linux Build][travis-image]][travis-url]\n  [![Windows Build][appveyor-image]][appveyor-url]\n  [![Test Coverage][coveralls-image]][coveralls-url]\n\n```js\nvar express = require(\'express\')\nvar app = express()\n\napp.get(\'/\', function (req, res) {\n  res.send(\'Hello World\')\n})\n\napp.listen(3000)\n```\n\n## Installation\n\n```bash\n$ npm install express\n```\n\n## Features\n\n  * Robust routing\n  * Focus on high performance\n  * Super-high test coverage\n  * HTTP helpers (redirection, caching, etc)\n  * View system supporting 14+ template engines\n  * Content negotiation\n  * Executable for generating applications quickly\n\n## Docs & Community\n\n  * [#express](https://webchat.freenode.net/?channels=express) on freenode IRC\n  * [Github Organization](https://github.com/expressjs) for Official Middleware & Modules\n  * [Google Group](https://groups.google.com/group/express-js) for discussion\n  * [Gitter](https://gitter.im/expressjs/express) for support and discussion\n  * [Русскоязычная документация](http://jsman.ru/express/)\n\n###Security Issues\n\nIf you discover a security vulnerability in Express, please see [Security Policies and Procedures](Security.md).\n\n## Quick Start\n\n  The quickest way to get started with express is to utilize the executable [`express(1)`](https://github.com/expressjs/generator) to generate an application as shown below:\n\n  Install the executable. The executable\'s major version will match Express\'s:\n\n```bash\n$ npm install -g express-generator@4\n```\n\n  Create the app:\n\n```bash\n$ express /tmp/foo && cd /tmp/foo\n```\n\n  Install dependencies:\n\n```bash\n$ npm install\n```\n\n  Start the server:\n\n```bash\n$ npm start\n```\n\n## Philosophy\n\n  The Express philosophy is to provide small, robust tooling for HTTP servers, making\n  it a great solution for single page applications, web sites, hybrids, or public\n  HTTP APIs.\n\n  Express does not force you to use any specific ORM or template engine. With support for over\n  14 template engines via [Consolidate.js](https://github.com/tj/consolidate.js),\n  you can quickly craft your perfect framework.\n\n## Examples\n\n  To view the examples, clone the Express repo and install the dependencies:\n\n```bash\n$ git clone git://github.com/expressjs/express.git --depth 1\n$ cd express\n$ npm install\n```\n\n  Then run whichever example you want:\n\n```bash\n$ node examples/content-negotiation\n```\n\n## Tests\n\n  To run the test suite, first install the dependencies, then run `npm test`:\n\n```bash\n$ npm install\n$ npm test\n```\n\n## People\n\nThe original author of Express is [TJ Holowaychuk](https://github.com/tj) [![TJ\'s Gratipay][gratipay-image-visionmedia]][gratipay-url-visionmedia]\n\nThe current lead maintainer is [Douglas Christopher Wilson](https://github.com/dougwilson) [![Doug\'s Gratipay][gratipay-image-dougwilson]][gratipay-url-dougwilson]\n\n[List of all contributors](https://github.com/expressjs/express/graphs/contributors)\n\n## License\n\n  [MIT](LICENSE)\n\n[npm-image]: https://img.shields.io/npm/v/express.svg\n[npm-url]: https://npmjs.org/package/express\n[downloads-image]: https://img.shields.io/npm/dm/express.svg\n[downloads-url]: https://npmjs.org/package/express\n[travis-image]: https://img.shields.io/travis/expressjs/express/master.svg?label=linux\n[travis-url]: https://travis-ci.org/expressjs/express\n[appveyor-image]: https://img.shields.io/appveyor/ci/dougwilson/express/master.svg?label=windows\n[appveyor-url]: https://ci.appveyor.com/project/dougwilson/express\n[coveralls-image]: https://img.shields.io/coveralls/expressjs/express/master.svg\n[coveralls-url]: https://coveralls.io/r/expressjs/express?branch=master\n[gratipay-image-visionmedia]: https://img.shields.io/gratipay/visionmedia.svg\n[gratipay-url-visionmedia]: https://gratipay.com/visionmedia/\n[gratipay-image-dougwilson]: https://img.shields.io/gratipay/dougwilson.svg\n[gratipay-url-dougwilson]: https://gratipay.com/dougwilson/\n',
+267 silly resolved     readmeFilename: 'Readme.md',
+267 silly resolved     bugs: { url: 'https://github.com/expressjs/express/issues' },
+267 silly resolved     _id: 'express@4.13.4',
+267 silly resolved     dist: { shasum: '98894dcde9699b07cd7ac0b30510ab13a729ff13' },
+267 silly resolved     _from: 'express@',
+267 silly resolved     _resolved: 'http://registry.npmjs.org/express/-/express-4.13.4.tgz' } ]
+268 info install gulp-cli@1.2.1 into /usr/local/lib
+269 info install express@4.13.4 into /usr/local/lib
+270 info installOne gulp-cli@1.2.1
+271 info installOne express@4.13.4
+272 info /usr/local/lib/node_modules/gulp-cli unbuild
+273 info /usr/local/lib/node_modules/express unbuild
+274 verbose tar unpack /home/parth/.npm/gulp-cli/1.2.1/package.tgz
+275 silly lockFile 61ed2849--local-lib-node-modules-gulp-cli tar:///usr/local/lib/node_modules/gulp-cli
+276 verbose lock tar:///usr/local/lib/node_modules/gulp-cli /home/parth/.npm/61ed2849--local-lib-node-modules-gulp-cli.lock
+277 silly lockFile ae2c8749-h-npm-gulp-cli-1-2-1-package-tgz tar:///home/parth/.npm/gulp-cli/1.2.1/package.tgz
+278 verbose lock tar:///home/parth/.npm/gulp-cli/1.2.1/package.tgz /home/parth/.npm/ae2c8749-h-npm-gulp-cli-1-2-1-package-tgz.lock
+279 verbose tar unpack /home/parth/.npm/express/4.13.4/package.tgz
+280 silly lockFile 365ba7ad-r-local-lib-node-modules-express tar:///usr/local/lib/node_modules/express
+281 verbose lock tar:///usr/local/lib/node_modules/express /home/parth/.npm/365ba7ad-r-local-lib-node-modules-express.lock
+282 silly lockFile 9cd9ccad-h-npm-express-4-13-4-package-tgz tar:///home/parth/.npm/express/4.13.4/package.tgz
+283 verbose lock tar:///home/parth/.npm/express/4.13.4/package.tgz /home/parth/.npm/9cd9ccad-h-npm-express-4-13-4-package-tgz.lock
+284 silly gunzTarPerm modes [ '755', '644' ]
+285 silly gunzTarPerm modes [ '755', '644' ]
+286 error Error: EACCES, mkdir '/usr/local/lib/node_modules'
+286 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules']
+286 error   errno: 3,
+286 error   code: 'EACCES',
+286 error   path: '/usr/local/lib/node_modules',
+286 error   fstream_type: 'Directory',
+286 error   fstream_path: '/usr/local/lib/node_modules/gulp-cli',
+286 error   fstream_class: 'DirWriter',
+286 error   fstream_stack:
+286 error    [ '/usr/lib/nodejs/fstream/lib/writer.js:171:23',
+286 error      '/usr/lib/nodejs/mkdirp/index.js:37:53',
+286 error      'Object.oncomplete (fs.js:107:15)' ] }
+287 error Please try running this command again as root/Administrator.
+288 error System Linux 3.13.0-32-generic
+289 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "express" "--global" "gulp-cli"
+290 error cwd /home/parth/sedna
+291 error node -v v0.10.25
+292 error npm -v 1.3.10
+293 error path /usr/local/lib/node_modules
+294 error fstream_path /usr/local/lib/node_modules/gulp-cli
+295 error fstream_type Directory
+296 error fstream_class DirWriter
+297 error code EACCES
+298 error errno 3
+299 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules'
+300 error fstream_stack /usr/lib/nodejs/fstream/lib/writer.js:171:23
+300 error fstream_stack /usr/lib/nodejs/mkdirp/index.js:37:53
+300 error fstream_stack Object.oncomplete (fs.js:107:15)
+301 verbose exit [ 3, true ]

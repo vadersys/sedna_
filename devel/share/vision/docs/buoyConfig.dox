@@ -1,0 +1,11 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~loRED" : \b [int] Low L bound for Red min: 0, default: 0, max: 255
+- \b "~loGreen" : \b [int] Low V bound for Green min: 0, default: 189, max: 255
+- \b "~hiRED" : \b [int] High L bound for Red min: 0, default: 25, max: 255
+- \b "~hiGreen" : \b [int] High V bound for Blue min: 0, default: 255, max: 255
+- \b "~minContourArea" : \b [int] Minimum threshold area for buoy contours min: 0, default: 250, max: 1000
+- \b "~blur" : \b [bool] True to enable 5x5 Gaussian blur  min: False, default: True, max: True
+

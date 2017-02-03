@@ -1,0 +1,12 @@
+\subsubsection usage Usage
+\verbatim
+<node name="line_task" pkg="vision" type="line_task">
+  <param name="val" type="double" value="143.0" />
+  <param name="upperAreaThresh" type="int" value="17647" />
+  <param name="areaThresh" type="int" value="95" />
+  <param name="blur" type="bool" value="False" />
+  <param name="threshLow" type="int" value="43" />
+  <param name="threshHigh" type="int" value="255" />
+</node>
+\endverbatim
+

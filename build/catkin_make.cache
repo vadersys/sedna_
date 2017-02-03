@@ -1,0 +1,2 @@
+c0ntrol:camera_umd/camera_umd:camera_umd/jpeg_streamer:camera_umd/uvc_camera:controller:keyboard:launches:rosserial/rosserial:rosserial/rosserial_arduino:rosserial/rosserial_client:rosserial/rosserial_embeddedlinux:rosserial/rosserial_mbed:rosserial/rosserial_msgs:rosserial/rosserial_python:rosserial/rosserial_server:rosserial/rosserial_test:rosserial/rosserial_tivac:rosserial/rosserial_windows:rosserial/rosserial_xbee:simulation:smach_:srmauv_msgs:visi0n:vision
+-DCATKIN_DEVEL_PREFIX=/home/parth/sedna/devel -DCMAKE_INSTALL_PREFIX=/home/parth/sedna/install -G Unix Makefiles

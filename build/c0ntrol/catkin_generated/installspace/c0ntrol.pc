@@ -1,0 +1,8 @@
+prefix=/home/parth/sedna/install
+
+Name: c0ntrol
+Description: Description of c0ntrol
+Version: 0.0.0
+Cflags: -I/home/parth/sedna/install/include
+Libs: -L/home/parth/sedna/install/lib 
+Requires: 

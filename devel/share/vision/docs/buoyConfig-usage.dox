@@ -1,0 +1,12 @@
+\subsubsection usage Usage
+\verbatim
+<node name="buoy_task" pkg="vision" type="buoy_task">
+  <param name="loRED" type="int" value="0" />
+  <param name="loGreen" type="int" value="189" />
+  <param name="hiRED" type="int" value="25" />
+  <param name="hiGreen" type="int" value="255" />
+  <param name="minContourArea" type="int" value="250" />
+  <param name="blur" type="bool" value="True" />
+</node>
+\endverbatim
+

@@ -1,0 +1,17 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~type" : \b [int] type min: 0, default: 3, max: 4
+- \b "~thresh_val" : \b [int] value min: 0, default: 0, max: 255
+- \b "~h_min" : \b [int] type min: 0, default: 0, max: 180
+- \b "~h_max" : \b [int] type min: 0, default: 0, max: 180
+- \b "~s_min" : \b [int] type min: 0, default: 100, max: 255
+- \b "~s_max" : \b [int] type min: 0, default: 255, max: 255
+- \b "~v_min" : \b [int] type min: 0, default: 100, max: 255
+- \b "~v_max" : \b [int] type min: 0, default: 255, max: 255
+- \b "~erosion" : \b [int] type min: 0, default: 0, max: 21
+- \b "~dilation" : \b [int] type min: 0, default: 0, max: 21
+- \b "~canny" : \b [int] type min: 0, default: 0, max: 100
+- \b "~thresh" : \b [int] type min: 0, default: 0, max: 255
+

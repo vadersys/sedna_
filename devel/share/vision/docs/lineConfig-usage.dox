@@ -1,0 +1,11 @@
+\subsubsection usage Usage
+\verbatim
+<node name="line_task" pkg="vision" type="line_task">
+  <param name="loOrange" type="int" value="143" />
+  <param name="areaThresh" type="int" value="50" />
+  <param name="hiOrange" type="int" value="190" />
+  <param name="upperAreaThresh" type="int" value="191" />
+  <param name="blur" type="bool" value="False" />
+</node>
+\endverbatim
+

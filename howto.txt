@@ -1,0 +1,6 @@
+
+Blur the source
+Canny Edge detection.
+Find contour.
+approxPolyDP for the contour.
+Check total size of approxPolyDP points.

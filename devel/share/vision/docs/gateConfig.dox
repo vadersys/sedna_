@@ -1,0 +1,8 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~loOrange" : \b [int] Low  bound for Orange min: 0, default: 0, max: 255
+- \b "~hiOrange" : \b [int] High  bound for Orange min: 0, default: 29, max: 255
+- \b "~minContourArea" : \b [int] Minimum threshold area for gate contours min: 0, default: 194, max: 1000
+

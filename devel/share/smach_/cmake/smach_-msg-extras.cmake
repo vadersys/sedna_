@@ -1,0 +1,2 @@
+set(smach__MESSAGE_FILES "/home/parth/sedna/devel/share/smach_/msg/sinkAction.msg;/home/parth/sedna/devel/share/smach_/msg/sinkActionGoal.msg;/home/parth/sedna/devel/share/smach_/msg/sinkActionResult.msg;/home/parth/sedna/devel/share/smach_/msg/sinkActionFeedback.msg;/home/parth/sedna/devel/share/smach_/msg/sinkGoal.msg;/home/parth/sedna/devel/share/smach_/msg/sinkResult.msg;/home/parth/sedna/devel/share/smach_/msg/sinkFeedback.msg")
+set(smach__SERVICE_FILES "")

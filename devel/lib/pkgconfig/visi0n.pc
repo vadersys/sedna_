@@ -1,0 +1,8 @@
+prefix=/home/parth/sedna/devel
+
+Name: visi0n
+Description: Description of visi0n
+Version: 0.0.0
+Cflags: -I/home/parth/sedna/devel/include
+Libs: -L/home/parth/sedna/devel/lib 
+Requires: 

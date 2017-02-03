@@ -1,0 +1,5 @@
+uint32 depth
+---
+uint32 pose
+---
+uint32 cur_depth

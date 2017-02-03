@@ -1,0 +1,9 @@
+\subsubsection usage Usage
+\verbatim
+<node name="dropper_task" pkg="vision" type="dropper_task">
+  <param name="loV" type="int" value="82" />
+  <param name="hiV" type="int" value="0" />
+  <param name="minContourArea" type="int" value="483" />
+</node>
+\endverbatim
+

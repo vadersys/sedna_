@@ -1,0 +1,8 @@
+prefix=/home/parth/sedna/devel
+
+Name: launches
+Description: Description of launches
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/parth/sedna/devel/lib 
+Requires: 

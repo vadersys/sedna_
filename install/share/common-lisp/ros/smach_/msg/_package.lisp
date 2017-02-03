@@ -1,0 +1,19 @@
+(cl:defpackage smach_-msg
+  (:use )
+  (:export
+   "<SINKACTION>"
+   "SINKACTION"
+   "<SINKGOAL>"
+   "SINKGOAL"
+   "<SINKFEEDBACK>"
+   "SINKFEEDBACK"
+   "<SINKACTIONFEEDBACK>"
+   "SINKACTIONFEEDBACK"
+   "<SINKACTIONGOAL>"
+   "SINKACTIONGOAL"
+   "<SINKACTIONRESULT>"
+   "SINKACTIONRESULT"
+   "<SINKRESULT>"
+   "SINKRESULT"
+  ))
+

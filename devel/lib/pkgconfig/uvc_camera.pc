@@ -1,0 +1,8 @@
+prefix=/home/parth/sedna/devel
+
+Name: uvc_camera
+Description: Description of uvc_camera
+Version: 0.2.4
+Cflags: 
+Libs: -L/home/parth/sedna/devel/lib -lnodelet_uvc_camera
+Requires: roscpp nodelet sensor_msgs
